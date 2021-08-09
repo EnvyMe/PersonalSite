@@ -1,0 +1,342 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+section {
+    height: 100vh;
+}
+
+div, p, h1, h2{
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-link{
+    color:#000;
+    display: none;
+}
+
+.nav-link:hover{
+    text-shadow:0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width:600px) {
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .navbar-nav .nav-link{
+        padding:.5rem;
+        font-size: .75rem;
+    }
+}
+
+/* HERO SECTION */
+.hero-1, .hero-2, .hero-3, .hero-4{
+    opacity: 0;
+    text-align: left;
+}
+
+.hero-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-hero {
+    width: 40%;
+}
+
+.hero-1 {
+    font-size: 1.5rem;
+    letter-spacing: .25rem;
+    line-height: 2;
+}
+
+.hero-3 {
+    line-height: .5;
+    font-size: 5.5rem;
+    font-family: 'Permanent Marker';
+}
+
+.hero-4 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+@media screen and (max-width:600px) {
+    .left-hero {
+        width: 80%;
+    }
+    .hero-1 {
+        font-size: 1.5rem;
+        letter-spacing: .25rem;
+        line-height: 2;
+    }
+    
+    .hero-3 {
+        line-height: .5;
+        font-size: 3.5rem;
+        font-family: 'Permanent Marker';
+    }
+    
+    .hero-4 {
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+}
+
+/* ABOUT ME SECTION */
+#about-me .row {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.selfie-container {
+    text-align: center;
+}
+
+.selfie {
+    width: 350px;
+    border-radius: 100%;
+    margin: 1.5rem auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-text h1 {
+    font-size: 4rem;
+    padding: 5% 0 0;
+    font-family: 'Permanent Marker';
+}
+
+.about-text p {
+    font-size: 1.5rem;
+    padding: 0;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:600px) {
+    .about-text{
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 1.75rem;
+        padding:0 0 5%;
+        font-family: 'Permanent Marker';
+    }
+    
+    .about-text p {
+        font-size: .75rem;
+        padding: 0;
+        color:rgba(0, 0, 0, 0.8);
+    }
+
+    .selfie {
+        width: 150px;
+        border-radius: 100%;
+        margin: 3.5rem 3.5rem 3.5rem 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #about-me .selfie-container{
+        width:50%;
+    }
+
+}
+
+/* PROJECTS SECTION */
+#projects{
+    padding:1% 10%;
+    text-align: center;
+}
+
+.project-card{
+    background-color: white;
+    display: inline-block;
+    padding:20px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+    font-weight: bolder;
+}
+
+.project-card:hover{
+    transform: translateY(-10px);
+}
+
+.col img{
+    height:200px;
+    width:400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.project-selector{
+    position: relative;
+    padding:0 20%;
+}
+
+#projects h1{
+    font-family: 'Permanent Marker';
+    padding:3rem 0 1.5rem;
+    font-size: 4.5rem;
+    color:#fff;
+}
+
+@media screen and (max-width:600px) {
+    .col img{
+        height:50px;
+        width:100px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    #projects h1{
+        font-family: 'Permanent Marker';
+        padding:0 0 0 1rem;
+        margin:30% 0 0;
+        font-size: 2.5rem;
+        color:#fff;
+    }
+
+    #projects p{
+        display: none;
+    }
+
+    .project-selector{
+        padding:0;
+    }
+
+    .project-card{
+        height:100px;
+        width: 150px;
+    }
+}
+
+
+/* SKILLS SECTION */
+#skills{
+    text-align: center;
+}
+
+#skills h1{
+    padding:5% 0 1.5rem;
+    font-family: 'Permanent Marker';
+    font-size: 4.5rem;
+}
+
+#skills .row{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    padding:0 10%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.fab{
+    font-size: 5em;
+}
+
+.fa-html5{
+    color:#F06529;
+}
+
+.fa-css3-alt{
+    color:#264de4;
+}
+
+.fa-bootstrap{
+    color:#7A43B6;
+}
+
+.fa-js-square{
+    color:#FFFF00;
+    background-color: black;
+    border-radius: 10%;
+    padding:0 7px;
+}
+
+.fa-git-alt{
+    color:red;
+}
+
+.fa-node-js{
+    color:#3C873A;
+}
+
+@media screen and (max-width:600px) {
+    .fab{
+        font-size: 3rem;
+    }
+
+    #skills h1{
+        font-size: 3rem;
+        margin:20% 0 0;
+    }
+
+    #skills p{
+        font-size: 1rem;
+    }
+}
+
+/* CONTACT-ME SECTION */
+.contact-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    font-size: 1.5rem;
+}
+
+.contact-container ul{
+    list-style: none;
+    padding: 5% 0 0;
+    text-align: center;
+}
+
+.contact-container h1{
+    font-family: 'Permanent Marker';
+    font-size: 4.5rem;
+}
+
+.contact-container a{
+    text-decoration: none;
+}
+
+.contact-container i{
+    padding:1rem;
+    color:#000;
+}
+.contact-container i:hover{
+    color:#fff;
+}
+
+@media screen and (max-width:600px) {
+    .contact-container{
+        font-size: .8rem;
+    }
+
+    .contact-container h1{
+        font-size: 2.5rem;
+    }
+}
